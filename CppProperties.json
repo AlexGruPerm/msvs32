@@ -4,14 +4,14 @@
       "inheritEnvironments": [
         "msvc_x86"
       ],
-      "name": "x86-Debug",
+      "name": "x86-Release",
       "includePath": [
         "${env.INCLUDE}",
         "${workspaceRoot}\\**"
       ],
       "defines": [
         "WIN32",
-        "_DEBUG",
+        "NDEBUG",
         "UNICODE",
         "_UNICODE"
       ],
