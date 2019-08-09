@@ -21,9 +21,8 @@ CREATE TABLE MTS_SRC.TICKS(
 	PRIMARY KEY (( ticker_id, ddate ), db_tsunx)
 ) WITH CLUSTERING ORDER BY (db_tsunx DESC);
 
-
-
-
+cqlsh 192.168.122.200
+COPY MTS_SRC.TICKS(ticker_id,ddate,db_tsunx,ask,bid) FROM '/root/ticks.csv' WITH HEADER=FALSE AND PAGETIMEOUT=40 AND PAGESIZE=20;
 
 /*=============================================================================================*/
 #property version "1.0"
