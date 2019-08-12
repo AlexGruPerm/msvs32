@@ -1,3 +1,0 @@
-LIBRARY	"mt4cass"
-EXPORTS
-	savetick	@1 
